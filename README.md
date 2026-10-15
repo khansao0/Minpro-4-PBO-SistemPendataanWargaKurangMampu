@@ -5,7 +5,7 @@
 ---
 
 ## 1. Deskripsi Singkat Program  
-Pada Mini Project 4 ini, saya melanjutkan pengembangan program pendataan warga kurang mampu penerima bantuan sosial dari Mini Project 3. Pada tahap ini, sistem telah diintegrasikan secara penuh dengan MySQL Database menggunakan arsitektur Data Access Object (DAO) dan PreparedStatement, serta mengimplementasikan Framework ORM (Hibernate / Jakarta Persistence - JPA) sebagai nilai tambah. Program ini memfasilitasi manajemen pendataan warga (kategori Lansia dan Disabilitas) dengan fitur CRUD lengkap (Create, Read, Update, Delete) yang kini tersimpan secara permanen di database.
+Pada Mini Project 4 ini, saya melanjutkan pengembangan program pendataan warga kurang mampu penerima bantuan sosial dari Mini Project 3. Pada tahap ini, sistem telah diintegrasikan secara penuh dengan MySQL Database menggunakan arsitektur Data Access Object (DAO) dan PreparedStatement, serta mengimplementasikan Framework ORM sebagai nilai tambah. Program ini memfasilitasi manajemen pendataan warga (kategori Lansia dan Disabilitas) dengan fitur CRUD lengkap (Create, Read, Update, Delete) yang kini tersimpan secara permanen di database.
 
 ---
 
