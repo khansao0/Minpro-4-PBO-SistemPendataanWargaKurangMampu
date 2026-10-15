@@ -147,6 +147,9 @@ Nilai tambah pada project Mini Project 4 ini adalah pengimplementasian Framework
  
 Gambar 1: Pembuatan database db_pendataan_warga dan skema tabel warga beserta query dummy data awal pada phpMyAdmin/Laragon.
 
+<img width="975" alt="image" src="https://github.com/user-attachments/assets/f65a1c6c-14be-4990-afd3-bec98050c05b" /> <br>
+File db_pendataan_warga.sql diletakkan di dalam project NetBeans yang menampung script penyiapan tabel dan data awal untuk syarat wajib tugas
+
 <img width="975" alt="image" src="https://github.com/user-attachments/assets/53578f9a-5b67-42ee-b652-1a4bd6098294" /> <br>
 
 Gambar 2: File db_pendataan_warga.sql diletakkan di dalam project NetBeans yang menampung script penyiapan tabel dan data awal untuk syarat wajib tugas.
