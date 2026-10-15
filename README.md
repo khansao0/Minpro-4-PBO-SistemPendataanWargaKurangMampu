@@ -112,24 +112,34 @@ Alur jalannya sistem pendataan warga adalah sebagai berikut:
 
 ## 6. Penjelasan Penerapan Polymorphism & Abstraction  
 - Abstraction
-  * Class Warga dideklarasikan sebagai abstract class dengan anotasi @Entity, sehingga tidak bisa dibuat objeknya secara langsung tanpa melalui subclass-nya.
-  * Memiliki abstract method getKategori() yang wajib di-override oleh WargaLansia dan WargaDisabilitas.
-  * Mengimplementasikan interface ValidasiSyarat.
+  * Class Warga dideklarasikan sebagai abstract class dengan anotasi @Entity, sehingga tidak bisa dibuat objeknya secara langsung tanpa melalui subclass-nya. <br>
+    <img width="200" alt="image" src="https://github.com/user-attachments/assets/996c35eb-9860-4b9a-a00a-38fc5c698dc0" /> <br>
+  * Memiliki abstract method getKategori() yang wajib di-override oleh WargaLansia dan WargaDisabilitas. <br>
+    <img width="200" alt="image" src="https://github.com/user-attachments/assets/5fa97dd6-5cdc-4676-a327-dae19d2fa2ee" /> <br>
+  * Mengimplementasikan interface ValidasiSyarat. <br>
+    <img width="200" alt="image" src="https://github.com/user-attachments/assets/e6d62b1f-a2ae-4226-a5ea-847ea43f91bc" /> <br>
+
 
 - Polymorphism Overriding
   * Meng-override method tampilkanInfo(), cekKelayakanBantuan(), dan getCatatanBantuan() pada subclass WargaLansia dan WargaDisabilitas.
 
 - Polymorphism Overloading
   * Diterapkan pada method tampilkanInfo() di class Warga.
-  * Versi pertama tampilkanInfo() menampilkan detail lengkap data warga.
-  * Versi kedua tampilkanInfo(boolean ringkas) menampilkan ringkasan data warga dalam satu baris.
+  * Versi pertama tampilkanInfo() menampilkan detail lengkap data warga. <br>
+    <img width="466" alt="image" src="https://github.com/user-attachments/assets/0f2efaa4-afa6-417d-893a-e0fb9cf1d5f4" /> <br>
+  * Versi kedua tampilkanInfo(boolean ringkas) menampilkan ringkasan data warga dalam satu baris. <br>
+    <img width="479" alt="image" src="https://github.com/user-attachments/assets/42e35f47-370f-4905-af0f-21aa479c6dfc" /> <br>
+
 
 ---
 
 ## 7. Penjelasan Penerapan JDBC  
-- Koneksi Database: Menggunakan Koneksi.java dengan DriverManager.getConnection() untuk menghubungkan program Java ke MySQL Database db_pendataan_warga.
+- Koneksi Database: Menggunakan Koneksi.java dengan DriverManager.getConnection() untuk menghubungkan program Java ke MySQL Database db_pendataan_warga. <br>
+  <img width="424" alt="image" src="https://github.com/user-attachments/assets/14659a60-3357-4fcd-a36f-b074e14b308a" /> <br>
 - Prepared Statement & DAO Pattern: Seluruh akses dan eksekusi kueri dipisahkan ke dalam kelas WargaDAO.java untuk menjamin keamanan dari SQL Injection.
-- Dummy Data (.sql): Menyiapkan file db_pendataan_warga.sql yang berisi skema tabel dan dummy data awal (Mbah Maimunah & Rahmat Hidayat) agar saat fitur Read dijalankan data langsung tampil tanpa input manual dari awal.
+- Dummy Data (.sql): Menyiapkan file db_pendataan_warga.sql yang berisi skema tabel dan dummy data awal (Mbah Maimunah & Rahmat Hidayat) agar saat fitur Read dijalankan data langsung tampil tanpa input manual dari awal. <br>
+  <img width="975" alt="image" src="https://github.com/user-attachments/assets/f99d5fdd-53e0-40e1-9c98-d00d0b05f316" /> <br>
+
 
 ---
 
