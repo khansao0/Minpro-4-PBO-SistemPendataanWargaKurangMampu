@@ -1,0 +1,11 @@
+pendataanwarga\model\KriteriaKemiskinan.class
+pendataanwarga\model\WargaDAO.class
+pendataanwarga\controller\WargaController.class
+pendataanwarga\model\ValidasiSyarat.class
+pendataanwarga\main\MainApp.class
+pendataanwarga\config\Koneksi.class
+pendataanwarga\view\WargaView.class
+pendataanwarga\model\WargaDisabilitas.class
+pendataanwarga\model\Warga.class
+pendataanwarga\model\WargaLansia.class
+pendataanwarga\config\HibernateUtil.class
