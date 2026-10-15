@@ -68,7 +68,7 @@ Pada Package pendataanwarga.main disini ada :
 ---
 
 ## 3. Penjelasan Struktur Package <br>
-<img width="215" alt="image" src="https://github.com/user-attachments/assets/1bd23162-8ded-4f41-86fb-421230f9a458" /> <br>
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/1bd23162-8ded-4f41-86fb-421230f9a458" /> <br>
 Struktur package ini disusun untuk memisahkan kelas sesuai perannya:
 - pendataanwarga.config : Berisi kelas konfigurasi basis data JDBC dan Hibernate ORM.
 - pendataanwarga.model : Berisi entitas data, interface, dan kelas DAO untuk akses basis data.
