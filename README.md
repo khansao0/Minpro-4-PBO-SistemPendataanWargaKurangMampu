@@ -101,7 +101,8 @@ Alur jalannya sistem pendataan warga adalah sebagai berikut:
 
 - Inheritance
   * Class Warga bertindak sebagai Abstract Superclass yang dipetakan ke tabel database menggunakan @Inheritance(strategy = InheritanceType.SINGLE_TABLE).
-  * Class WargaLansia dan WargaDisabilitas bertindak sebagai Subclass yang mewarisi (extends) class Warga dengan pembeda @DiscriminatorValue.
+  * Class WargaLansia dan WargaDisabilitas bertindak sebagai Subclass yang mewarisi (extends) class Warga dengan pembeda @DiscriminatorValue. <br>
+    <img width="200" alt="image" src="https://github.com/user-attachments/assets/0bcda0b7-154f-487b-97c5-c3c08204e251" /> <br>
   * Menggunakan super pada konstruktor subclass untuk meneruskan data ke superclass.
 
 ---
@@ -134,18 +135,18 @@ Nilai tambah pada project Mini Project 4 ini adalah pengimplementasian Framework
 - Konfigurasi Dependencies & File XML: Menambahkan dependency Hibernate pada pom.xml dan membuat file hibernate.cfg.xml pada folder src/main/resources untuk mengatur konfigurasi dialek MySQL dan pendaftaran entitas.
 - Inisialisasi Factory (HibernateUtil.java): Diletakkan pada package pendataanwarga.config untuk membungkus SessionFactory Hibernate.
 - Anotasi Entitas ORM: Diterapkan pada package pendataanwarga.model:
-  - Anotasi @Embeddable pada KriteriaKemiskinan.java.
-    <img width="222" alt="image" src="https://github.com/user-attachments/assets/faf212dc-761e-4c3a-ab1e-8be2d936e99b" /> <br>
-  - Anotasi @Entity, @Table, @Inheritance, dan @Embedded pada Warga.java.
-    <img width="383" alt="image" src="https://github.com/user-attachments/assets/81ecd7ba-a517-4d3b-9a91-0cebf39e819a" /> <br>
-  - Anotasi @Entity dan @DiscriminatorValue pada WargaLansia.java dan WargaDisabilitas.java.
-    <img width="235" alt="image" src="https://github.com/user-attachments/assets/e28d4a2a-01b4-4066-9888-318a438d495c" /> <br>
-    <img width="223" alt="image" src="https://github.com/user-attachments/assets/27509f69-b6b6-4cf4-af25-d44b5b9b967a" /> <br>
-- Akses Data Hibernate (WargaDAO.java): Pengelolaan operasi CRUD database menggunakan API Session Hibernate seperti session.persist(), session.createQuery(), session.merge(), dan session.remove() tanpa kueri SQL manual baris demi baris.  
-  <img width="332" alt="image" src="https://github.com/user-attachments/assets/147ae302-a718-4928-8b50-928ee9e0af63" /> <br>
-  <img width="319" alt="image" src="https://github.com/user-attachments/assets/7bd939ce-9a68-4cc7-a304-98d6971748af" /> <br>
-  <img width="146" alt="image" src="https://github.com/user-attachments/assets/9131866b-b992-476e-906a-29daf082f7bc" /> <br>
-  <img width="137" alt="image" src="https://github.com/user-attachments/assets/a6bf1634-e69f-4b68-a5ed-6cc15d0b3e86" /> <br>
+  - Anotasi @Embeddable pada KriteriaKemiskinan.java. <br>
+    <img width="500" alt="image" src="https://github.com/user-attachments/assets/faf212dc-761e-4c3a-ab1e-8be2d936e99b" /> <br>
+  - Anotasi @Entity, @Table, @Inheritance, dan @Embedded pada Warga.java. <br>
+    <img width="500" alt="image" src="https://github.com/user-attachments/assets/81ecd7ba-a517-4d3b-9a91-0cebf39e819a" /> <br>
+  - Anotasi @Entity dan @DiscriminatorValue pada WargaLansia.java dan WargaDisabilitas.java. <br>
+    <img width="500" alt="image" src="https://github.com/user-attachments/assets/e28d4a2a-01b4-4066-9888-318a438d495c" /> <br>
+    <img width="500" alt="image" src="https://github.com/user-attachments/assets/27509f69-b6b6-4cf4-af25-d44b5b9b967a" /> <br>
+- Akses Data Hibernate (WargaDAO.java): Pengelolaan operasi CRUD database menggunakan API Session Hibernate seperti session.persist(), session.createQuery(), session.merge(), dan session.remove() tanpa kueri SQL manual baris demi baris. <br>
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/147ae302-a718-4928-8b50-928ee9e0af63" /> <br>
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/7bd939ce-9a68-4cc7-a304-98d6971748af" /> <br>
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/9131866b-b992-476e-906a-29daf082f7bc" /> <br>
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/a6bf1634-e69f-4b68-a5ed-6cc15d0b3e86" /> <br>
   
 
 
