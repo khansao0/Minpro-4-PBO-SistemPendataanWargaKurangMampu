@@ -266,7 +266,7 @@ Gambar 18: Penerapan nilai tambah ORM pada metode getAllWarga() menggunakan HQL 
 Gambar 19: Penerapan nilai tambah ORM pada metode updateWarga() menggunakan session.get() dan session.merge(target) untuk memperbarui record entitas di database.
 
 SS keseluruhan wargaDAO.java <br>
-<img width="485" alt="image" src="https://github.com/user-attachments/assets/65e666b8-cb46-43e1-9272-d7358c027c0c" /> <br>
+<img width="975" alt="image" src="https://github.com/user-attachments/assets/f138511f-2554-4f6b-a76e-e7bc029c368b" /> <br>
 <img width="975" alt="image" src="https://github.com/user-attachments/assets/22962d82-3c9e-4335-9c22-c247a057d309" /> <br>
 <img width="975" alt="image" src="https://github.com/user-attachments/assets/eb33e17e-c9d4-4a06-aada-67692d7fa86d" /> <br>
 <img width="975" alt="image" src="https://github.com/user-attachments/assets/6219abee-8be1-4d1a-81cf-8fcd2d246aa5" /> <br>
