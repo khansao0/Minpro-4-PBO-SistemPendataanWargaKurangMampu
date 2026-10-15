@@ -101,10 +101,12 @@ Alur jalannya sistem pendataan warga adalah sebagai berikut:
 
 - Inheritance
   * Class Warga bertindak sebagai Abstract Superclass yang dipetakan ke tabel database menggunakan @Inheritance(strategy = InheritanceType.SINGLE_TABLE). <br>
-  <img width="359" height="56" alt="image" src="https://github.com/user-attachments/assets/b2e66be9-563e-44d2-b014-0b87507bcc04" /> <br>
+    <img width="359" height="56" alt="image" src="https://github.com/user-attachments/assets/b2e66be9-563e-44d2-b014-0b87507bcc04" /> <br>
   * Class WargaLansia dan WargaDisabilitas bertindak sebagai Subclass yang mewarisi (extends) class Warga dengan pembeda @DiscriminatorValue. <br>
-    <img width="200" alt="image" src="https://github.com/user-attachments/assets/0bcda0b7-154f-487b-97c5-c3c08204e251" /> <br>
-  * Menggunakan super pada konstruktor subclass untuk meneruskan data ke superclass.
+    <img width="300" alt="image" src="https://github.com/user-attachments/assets/0bcda0b7-154f-487b-97c5-c3c08204e251" /> <br>
+  * Menggunakan super pada konstruktor subclass untuk meneruskan data ke superclass. <br>
+    <img width="300" alt="image" src="https://github.com/user-attachments/assets/bd780b51-cfc4-46d1-ac41-df7e7c1ceda2" /> <br>
+
 
 ---
 
