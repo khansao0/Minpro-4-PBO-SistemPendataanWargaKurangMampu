@@ -77,7 +77,22 @@ Struktur package pada Mini Project 4 ini disusun untuk memisahkan kelas sesuai p
 
 ---
 
-## 4. Penjelasan Penerapan Encapsulation & Inheritance  
+## 4. Penjelasan Alur Program
+Alur jalannya sistem pendataan warga adalah sebagai berikut:
+1. Program pertama kali dijalankan dari kelas MainApp.java yang menginisialisasi WargaController dan WargaView.
+2. Kelas WargaController kemudian menyiapkan WargaDAO yang secara otomatis membuka koneksi ke MySQL Database db_pendataan_warga lewat konfigurasi ORM Hibernate.
+3. Saat sistem pertama kali dijalankan dan pengguna memilih menu Tampilkan Data (Read), WargaDAO mengeksekusi query kueri ke basis data untuk mengambil dummy data awal yang sudah di-insert dari file db_pendataan_warga.sql.
+4. Program menampilkan antarmuka menu interaktif CLI di WargaView dengan 6 pilihan menu utama:
+   - 1. Tambah Data Warga (Create): Pengguna memilih kategori (Lansia atau Disabilitas) lalu menginputkan data diri dan kriteria ekonomi. Data diproses oleh controller lalu WargaDAO menyimpan entitas objek ke database secara permanen melalui fungsi session.persist().
+   - 2. Tampilkan Data Warga (Read): Controller mengambil seluruh list data dari WargaDAO (session.createQuery) lalu WargaView menampilkan detail lengkap beserta perhitungan otomatis kelayakan bantuan dari interface ValidasiSyarat.
+   - 3. Tampilkan Ringkasan Warga (Overloading): Controller memanggil method overloading tampilkanInfo(true) pada kelas model untuk mencetak rangkuman status bantuan sosial secara ringkas satu baris per warga.
+   - 4. Ubah Data Warga (Update): Pengguna memilih nomor urut data yang ingin diubah lalu memasukkan data pembaruan. Controller mengirim data baru ke WargaDAO untuk diperbarui di database menggunakan fungsi session.merge().
+   - 5. Hapus Data Warga (Delete): Pengguna memilih nomor urut data yang akan dihapus. Setelah konfirmasi persetujuan (y/n), WargaDAO menghapus data dari database menggunakan fungsi session.remove().
+   - 6. Keluar: Program menghentikan loop menu dan menutup aplikasi.
+
+ ---
+
+## 5. Penjelasan Penerapan Encapsulation & Inheritance  
 - Encapsulation
   * Semua atribut pada setiap class di dalam package model dan controller menggunakan access modifier private agar tidak bisa diakses secara langsung dari luar class.
   * Menggunakan method getter dan setter untuk mengakses dan mengubah nilai atribut.
@@ -90,7 +105,7 @@ Struktur package pada Mini Project 4 ini disusun untuk memisahkan kelas sesuai p
 
 ---
 
-## 5. Penjelasan Penerapan Polymorphism & Abstraction  
+## 6. Penjelasan Penerapan Polymorphism & Abstraction  
 - Abstraction
   * Class Warga dideklarasikan sebagai abstract class dengan anotasi @Entity, sehingga tidak bisa dibuat objeknya secara langsung tanpa melalui subclass-nya.
   * Memiliki abstract method getKategori() yang wajib di-override oleh WargaLansia dan WargaDisabilitas.
@@ -106,14 +121,14 @@ Struktur package pada Mini Project 4 ini disusun untuk memisahkan kelas sesuai p
 
 ---
 
-## 6. Penjelasan Penerapan JDBC  
+## 7. Penjelasan Penerapan JDBC  
 - Koneksi Database: Menggunakan Koneksi.java dengan DriverManager.getConnection() untuk menghubungkan program Java ke MySQL Database db_pendataan_warga.
 - Prepared Statement & DAO Pattern: Seluruh akses dan eksekusi kueri dipisahkan ke dalam kelas WargaDAO.java untuk menjamin keamanan dari SQL Injection.
 - Dummy Data (.sql): Menyiapkan file db_pendataan_warga.sql yang berisi skema tabel dan dummy data awal (Mbah Maimunah & Rahmat Hidayat) agar saat fitur Read dijalankan data langsung tampil tanpa input manual dari awal.
 
 ---
 
-## 7. Penjelasan Letak Penerapan Nilai Tambah  
+## 8. Penjelasan Letak Penerapan Nilai Tambah  
 Nilai tambah pada project Mini Project 4 ini adalah pengimplementasian Framework ORM (Hibernate / Jakarta Persistence - JPA):
 - Konfigurasi Dependencies & File XML: Menambahkan dependency Hibernate pada pom.xml dan membuat file hibernate.cfg.xml pada folder src/main/resources untuk mengatur konfigurasi dialek MySQL dan pendaftaran entitas.
 - Inisialisasi Factory (HibernateUtil.java): Diletakkan pada package pendataanwarga.config untuk membungkus SessionFactory Hibernate.
@@ -125,7 +140,7 @@ Nilai tambah pada project Mini Project 4 ini adalah pengimplementasian Framework
 
 ---
 
-## 8. Dokumentasi Output Program & Implementasi Code  
+## 9. Dokumentasi Output Program & Implementasi Code  
 
 ### 1. Persiapan Database & File SQL
 <img width="900" alt="WhatsApp Image 2026-10-15 at 9 22 07 PM" src="https://github.com/user-attachments/assets/22bf2a3c-98b2-47ca-af74-e6adcbe44c9a" /> <br>
